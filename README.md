@@ -1,40 +1,35 @@
-# bysj-070
+#1.项目介绍
+- 功能模块：用户管理、商品管理、推广管理、系统管理、配置报表、小程序管理等
+- 技术栈：SpringBoot、vue、原生微信小程序等
+- 测试环境：idea2024，vscode，maven3，node12.16.1，jdk1.8，微信开发工具等
+- 其实就是个商城，助农只是赋予一个特定场景，商品为农产品即可。
+# 2.项目部署
+## 2.1 后端部署
+- 创建数据库，导入sql
+- 通过idea打开项目mallsystem，根据本地数据库环境修改mall-db/src/main/resources/application-db.yml 10-13行
+- 注册小程序或者注册测试小程序，配置mall-core\src\main\resources\application-core.yml 4-5行
+- 启动下面几个项目
+- mall-admin-api\src\main\java\org\linlinjava\litemall\admin\Application.java
+- mall-all\src\main\java\org\linlinjava\litemall\Application.java
+- mall-all-war\src\main\java\org\linlinjava\litemall\Application.java
+- mall-wx-api\src\main\java\org\linlinjava\litemall\wx\Application.java
+## 2.2 后端管理web
+- 通过idea（安装了vue的插件）或者vscode等IDE打开项目 mallsystem-vue
+- npm install
+- npm run dev
+# 2.3 小程序
+- 微信开发工具打开mall-wx
+- 填写appid，打开，重新编译即可。
+# 3.项目部署截图
+![输入图片说明](1.png)
+![输入图片说明](2.png)
+![输入图片说明](3.png)
+![输入图片说明](4.png)
+![输入图片说明](5.png)
+![输入图片说明](6.png)
+![输入图片说明](7.png)
+![输入图片说明](8.png)
+![输入图片说明](9.png)
 
-#### 介绍
-基于微信小程序的助农商城+论文示例参考。功能模块：用户管理、商品管理、推广管理、系统管理、配置报表、小程序管理等
-技术栈：SpringBoot、vue、原生微信小程序等
-测试环境：idea2024，vscode，maven3，node12.16.1，jdk1.8，微信开发工具等
-其实就是个商城，助农只是赋予一个特定场景，商品为农产品即可。
-
-#### 软件架构
-软件架构说明
-
-
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+# 4.获取方式
+[戳我查看](https://gitee.com/aven999/mall)
